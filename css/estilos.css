@@ -1,0 +1,122 @@
+    /* mudar o Box model CSS padrão para todas as tags da página*/
+    * { box-sizing: border-box; }
+
+    body {
+        background-image: radial-gradient(circle, #cc8dde, #d69cde, #ddacde, #e3bcdf, #e7cce2);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-size: cover;
+        background-attachment: fixed;
+        /* background-attachment: fixed; consegue fixar a imagem  */
+    }
+
+    /* seletor ID/Identificado */
+    #container {
+        width: 70%;
+        margin: auto;
+        background-color: rgb(238, 211, 226);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: rgb(214, 89, 193) 2px 2px 50px;
+
+    }
+
+    h1 {
+        background-color: rgb(189, 120, 253);
+        color: rgb(238, 189, 223);
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /* sintase completa */
+        border-style: solid;
+        border-width: 10px;
+        border-color: #d69cde;
+
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 20px;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+
+    }
+
+    h3,
+    p,
+    figcaption {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    h3 {
+        background: linear-gradient(to left, rgb(189, 120, 253), #d69cde);
+        padding: 4px;
+
+    }
+
+    /* seletor de classe */
+    .centralizar {
+        text-align: center;
+    }
+
+    .borda-arredondada {
+        border-radius: 8px;
+    }
+
+    .sombra-texto {
+        text-shadow: 2px 2px 5px;
+    }
+
+    .destaque {
+        background-color: rgb(231, 121, 189);
+        color: white;
+        padding: 3px;
+        border: solid 2px rgb(241, 235, 235);
+
+    }
+
+    figure {
+        /* reset de espaçamentos */
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    /* tornar as imagens flexivas e responsivas */
+    img {
+        max-width: 100%;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+
+    /* regra de estado inicial do link 
+(seletor descendente) */
+    nav a {
+        background-color: #e9a5e2;
+        color: rgb(175, 19, 175);
+        font-weight: bold;
+        text-decoration: none;
+        transition: 0, 5s;
+        /* tirei o  padding: 10px; para o funcionamento 50% o width  */
+        /* necessario para o funcionamento do menu o transformer */
+        display: inline-block;
+        width: 50%;
+        padding: 20px;
+        border: solid 2px;
+
+
+
+
+
+    }
+
+
+    /* regra de acionamento de link 
+nav a:hover {
+    background-color: rgb(175, 19, 175);
+    color: rgb(231, 121, 189);
+    transform: scale(1.2);
+    */
+    }
